@@ -1,33 +1,31 @@
 body {
-    background-image: url(./img/bg.png);
+    background-image: url(img/bg.png);
     background-size: 100%;
     text-align: center;
 }
 
-div {
-    text-align: center;
-    margin: 15px;
-}
-
 .zb {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
     margin: 15px;
     border-radius: 7px;
+    backdrop-filter: blur(10px);
 }
 
 .zb-title {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.3);
     margin: 15px;
     border-radius: 7px;
+    backdrop-filter: blur(10px);
 }
 
 .zb-left {
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
     margin: 15px;
     border-radius: 7px;
+    backdrop-filter: blur(10px);
 }
 
 .zb-img {
@@ -35,6 +33,7 @@ div {
     background-color: rgba(255, 255, 255, 1.0);
     margin: 15px;
     border-radius: 7px;
+    backdrop-filter: blur(10px);
 }
 
 .logo {

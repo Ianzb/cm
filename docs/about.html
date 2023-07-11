@@ -4,29 +4,56 @@
     <title>关于</title>
     <meta charset="utf-8">
     <link href="logo.ico" rel="icon">
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
 </head>
 
 <body>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html"><img src="img/home.png" height="20" width="20"> 主页</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="rule.html"><img src="img/rule.png" height="20" width="20"> 群规</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://codeandminecraft.fandom.com/zh/wiki/%E4%B8%BB%E9%A1%B5"
-                target="_blank"><img src="img/talk.png" height="20" width="20"> 论坛</a>
-        </li>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active disabled" href="about.html"><img src="img/about.png" height="20" width="20">
-                关于</a>
-        </li>
-    </ul>
-    <h3 class="zb-title"><img src="img/about.png" height="25" width="25">关于</h3>
+    <nav class="navbar navbar-expand-sm sticky-top zb-top">
+        <img src="img/logo.png" class="d-inline-block align-text-top" style="margin: 5px;" width="30" height="30">
+        <a class="navbar-brand">CM官网</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color: rgba(255, 255, 255, 0);">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">主页</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    链接
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="rule.html">群规</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="https://jq.qq.com/?_wv=1027&k=RVAnz9K6" target="_blank">QQ群</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="https://codeandminecraft.fandom.com/zh/wiki/%E4%B8%BB%E9%A1%B5"
+                            target="_blank">论坛</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="https://www.123pan.com/s/bSslVv-u8qEh.html"
+                            target="_blank">资源网盘</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="https://docs.qq.com/sheet/DUlVpU3FYY3VxZ2F1"
+                            target="_blank">在线文档</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active disabled" aria-current="page" href="about.html">关于</a>
+            </li>
+        </ul>
+    </nav>
+    <h3 class="zb"><img src="img/about.png" height="25" width="25">关于</h3>
     <div class="zb">
         <h5>开发</h5>
         作者：Ianzb<br>
@@ -77,8 +104,15 @@
         2023-05-20：7.4.2：使用Git作为发布方式，更新开发界面描述文本<br>
         2023-05-27：7.4.3：更新群文件网盘链接，更新背景图片到MC1.20版本<br>
         2023-06-04：7.5.0：更新Bootstrap到5.3.0，添加背景部分模糊效果，修复主页管理人员部分贴靠错误的Bug<br>
+        即将到来：8.0.0-beta：添加背景位置固定、自适应窗口缩放、不进行密铺，重制导航栏和底栏，添加JS组件，将页面标题和内容背景透明度统一，删除Ianzb的个人主页，删除主页相关链接<br>
     </div>
-    <div class="zb">By Ianzb 2022-2023</div>
+    <ul class="nav nav-pills nav-justified zb-top">
+        <li class="nav-item">
+            <a class="nav-link disabled">
+                <font color="black">By Ianzb 2021-2023</font>
+            </a>
+        </li>
+    </ul>
 </body>
 
 </html>

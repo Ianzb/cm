@@ -10,9 +10,11 @@
     <script src="./js/bootstrap.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
+    <script>addPages({ "1": "./personal/1.html", "2": "./personal/2.html" })</script>
 </head>
 
 <body>
+    <script>loadPage()</script>
     <div id="header" class="sticky-top"></div>
     <h3 class="zb"><img src="./svg/home.svg" height="30" width="25">主页</h3>
     <div class="zb">
@@ -41,7 +43,7 @@
                 <h5 class="card-title">DXJLSFB139</h5>
                 <p class="card-text">职位：<span class="badge text-bg-primary">管理员</span></p>
                 <p class="card-text">任期开始于2022年4月8日</p>
-                <a onclick="loadPage('body', './personal/1.html')" class="btn btn-light">个人主页</a>
+                <a href="?page=1" class="btn btn-light">个人主页</a>
                 <a href="https://code.xueersi.com/space/4888546" class="btn btn-light" target="_blank">C站主页</a>
             </div>
         </div>
@@ -51,13 +53,13 @@
                 <h5 class="card-title">越菜越爱玩的机酱</h5>
                 <p class="card-text">职位：<span class="badge text-bg-primary">管理员</span></p>
                 <p class="card-text">任期开始于2022年5月8日</p>
-                <a onclick="loadPage('body', './personal/2.html')" class="btn btn-light">个人主页</a>
+                <a href="?page=2" class="btn btn-light">个人主页</a>
                 <a href="https://code.xueersi.com/space/40471363" class="btn btn-light" target="_blank">C站主页</a>
             </div>
         </div>
     </div>
     <div id="footer"></div>
-    <script>load()</script>
+    <script>loadTemplate()</script>
 
 </body>
 
